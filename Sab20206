@@ -255,7 +255,7 @@ task.spawn(function()
 end)
 
 -- Delay para evitar conflito
-task.wait(3)
+task.wait(10)
 
 -- Segundo script
 task.spawn(function()
