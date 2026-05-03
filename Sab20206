@@ -253,7 +253,7 @@ getgenv().TARGET_BRAINROTS = {
 loadstring(game:HttpGet("https://redyn.pages.dev/Loader/Universel"))()
 
 -- espera carregar
-task.wait(5)
+task.wait(3)
 
 -- SCRIPT EM SEGUNDO
 task.spawn(function()
